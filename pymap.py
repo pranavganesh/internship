@@ -23,7 +23,7 @@ with open('ecef_data.csv','w',encoding='UTF8') as f:
 
         lat1,lon1,alt1 = pm.ecef2geodetic(x,y,z)
 
-        if(round(alt1,5)==round(alt,5)):
+        if((round(lat1,5)==round(lat,5)) and (round(lon1,5)==round(lon,5)) and (round(alt1,5)==round(alt,5))):
             count+=1
 
 
